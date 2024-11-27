@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <!-- This website template was created by: Rebecca Moorehouse Date: September 25 2024 -->
+  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electra Shavers</title>
+    <link rel="icon" href="images/Electra_Shavers_favicon.png" type="image/png">
+</head>
+<body>
+
+  <div id="container">
+  
+<!-- Use the header area for the website name or logo -->
+  <header>
+	<img src="images/shaver_banner.jpg" alt="An electric shaver on a towel set on a bathroom counter" width="1500" height="300"></a>
+  </header>
+    <!-- Logo (top-left corner) linking to the homepage -->
+    <a href="index.html">
+        <img src="images/Electra_Shavers_logo.png" alt="Electra Shavers Logo" id="logo" width="64" height="64">
+    </a>
+   <!-- Use the nav area to add hyperlinks to other pages within the website -->
+  <nav>
+      <p><a href="index.html"> Home</a> &nbsp; &nbsp; 
+	  <a href="about.html"> About</a> &nbsp; &nbsp; 
+	  <a href="team.html"> Our Team</a> &nbsp; &nbsp; 
+	  <a href="specials.html"> Specials</a> &nbsp; &nbsp; 
+	  <a href="training.html"> Training</a> &nbsp; &nbsp; 
+	  <a href="media.html"> Media</a> &nbsp; &nbsp; 
+	  <a href="faqs.html"> FAQs</a> &nbsp; &nbsp; 
+	  <a href="contact.html"> Contact Us</a></p>
+  </nav>
+    
+   <!-- Use the main area to add the main content of the website -->
+  <main>
+    
+<form action="results.html" method="get" class="form">
+  <div class="form">
+  
+     <!-- Instructions Section with Numbered List -->
+     <h2>Instructions</h2>
+     <ol>
+        <li>Fill out the form below with your personal details, including your name and email.</li>
+        <li>Provide your product feedback for the products</li>
+		<li>If you need a refund fill out the product refund and select other in how did you hear about us.</li>
+        <li>Provide your preferences for an electric shaver.</li>
+		<li>Share any additional feedback in the section provided.</li>
+        <li>Click 'Submit Request' to send us your information, or 'Reset Form' to clear the entries.</li>
+     </ol>
+
+     <!-- Personal Details -->
+     <fieldset>
+         <legend>Personal Informatione</legend>
+         <label for="name">Full Name:</label>
+         <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+
+         <label for="email">Email Address:</label>
+         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+         
+     </fieldset>
+	 
+	 <!-- Product Feedback -->
+	 <fieldset>
+	   <legend>Product Feedback</legend>
+          <label for="shaverType">Type of Shaver:</label>
+          <select id="shaverType" name="shaverType" required>
+             <option value="" disabled selected>Select a type</option>
+             <option value="men">Men's Shavers</option>
+             <option value="women">Women's Shavers</option>
+          </select>
+	
+	      <label>How did you hear about us?</label>
+          <input type="radio" id="ads" name="referral" value="ads" required>
+          <label for="ads">Advertisements</label>
+          <input type="radio" id="friend" name="referral" value="friend">
+          <label for="friend">Friend</label>
+          <input type="radio" id="online" name="referral" value="online">
+          <label for="online">Online Search</label>
+		  <input type="radio" id="other" name="referral" value="other">
+          <label for="other">Other</label>
+     </fieldset>
+	 
+	 <!-- Product Refund-->
+	 <fieldset>
+	    <legend>Product Refund</legend>
+        <!-- Return and Refund Option -->
+		<div class="return-refund">
+           <p>Are you submitting feedback for a return or refund?</p>
+           <input type="checkbox" id="returnRefund" name="returnRefund" value="yes">
+           <label for="returnRefund">Yes, this is a return/refund request.</label><br>
+		</div>
+		
+		<!-- Purchase Date-->
+		<label>When did you purchase your electric shaver?</label>
+        <label for="purchaseDate">Purchase Date:</label>
+        <input type="date" id="purchaseDate" name="purchaseDate" required>
+	 </fieldset>
+
+	 <!-- Preferences -->
+	 <fieldset>
+	    <legend>Preferences</legend>
+        <label>Which features are you interested in? (Check all that apply):</label>
+	    <input type="checkbox" id="color" name="preferences" value="color">
+        <label for="color">Color</label>
+
+        <input type="checkbox" id="head" name="preferences" value="head">
+        <label for="head">Head</label>
+
+        <input type="checkbox" id="chargeTime" name="preferences" value="chargeTime">
+        <label for="chargeTime">Charge Time</label>
+
+        <input type="checkbox" id="material" name="preferences" value="material">
+        <label for="material">Material</label>
+
+        <input type="checkbox" id="gender" name="preferences" value="gender">
+        <label for="gender">Gender</label>
+	 </fieldset>
+	 
+	 <!-- Additional Feedback -->
+     <fieldset>
+        <legend>Additional Feedback</legend>
+        <label for="feedback">Provide your feedback or inquiry here:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Type your feedback here..."></textarea>
+     </fieldset>
+	 
+	 <!-- Buttons -->
+  <div style="text-align: center; margin-top: 20px;">
+    <button type="submit">Submit Request</button>
+    <button type="reset">Reset Form</button>
+	 
+  </div>
+</form>
+	
+  </main>
+  
+  <!-- Use the footer area to add webpage footer content -->
+  <footer>
+  <p>&copy; Copyright 2099. All Rights Reserved.<br> Request
+  information<br>
+  Rebecca Moorehouse &nbsp; &nbsp; c0641318</p>
+  </footer>
+ 
+  </div>
+  
+</body>
+</html>

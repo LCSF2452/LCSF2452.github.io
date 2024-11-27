@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+<head>
+<body>
+  <div class="results-container">
+    <h1>Thank You for Your Submission!</h1>
+    <p><strong>Name:</strong> <span id="userName"></span></p>
+    <p><strong>Email:</strong> <span id="userEmail"></span></p>
+  </div>
+
+  <script>
+    // Function to get query parameters from the URL
+    function getQueryParams() {
+      const params = {};
+      const queryString = window.location.search.substring(1); // Remove "?" at the start
+      const pairs = queryString.split("&");
+
+      pairs.forEach(pair => {
+        const [key, value] = pair.split("=");
+        params[decodeURIComponent(key)] = decodeURIComponent(value || "");
+      });
+
+      return params;
+    }
+
+    // Populate the results page with user data
+    const params = getQueryParams();
+    document.getElementById("userName").textContent = params.name || "Not provided";
+    document.getElementById("userEmail").textContent = params.email || "Not provided";
+  </script>
+</body>
+</html>
