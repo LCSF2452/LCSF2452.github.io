@@ -1,0 +1,248 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #A5BF45;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img, ul {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for header */
+header {
+    background-color: #163A59;
+    color: #A6A197;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #697322;
+    padding: 10px 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style the links inside nav */
+nav a {
+    text-decoration: none;
+    color: #A6A197;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+/* Style for the logo */
+#logo {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* On hover, change background color for nav links */
+nav a:hover {
+    background-color: #030C26;
+}
+
+/* Style the main element */
+main {
+    display: block;
+    background-color: #A6A197;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h2 {
+    color: #163A59;
+    text-align: center;
+    font-family: "Palatino", serif;
+}
+
+ol, li {
+    color: #030C26;
+    font-family: "Luminari", fantasy;
+} 
+
+form {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+fieldset {
+  border: 1px solid #697322;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid #A5BF45;
+}
+
+button {
+  background-color: #163A59;
+  color: #697322;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+button:hover {
+  background-color:   
+ #030C26;
+}
+
+/* Specific Styling */
+.return-refund {
+  margin-bottom: 10px;
+}
+
+.return-refund p {
+  margin-bottom: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #A6A197;
+    color: #163A59;
+	font-size: 5px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Footer link styling */
+.footer a {
+    color: #697322;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Add padding to the bottom of body to prevent content overlap */
+body {
+    padding-bottom: 50px;
+}
+
+/* Media Queries for responsiveness */
+
+/* Mobile Layout (Small screens) */
+@media screen and (max-width: 480px) {
+    /* Stack the logo and navigation vertically */
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+	
+    nav {
+        margin-left: 0; /* Remove left margin */
+        display: block;
+        text-align: center; /* Center nav items */
+    }
+
+    /* Make nav links full-width */
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Tablet Layout (Medium screens) */
+@media screen and (max-width: 768px) {
+    /* Center the logo and nav layout */
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    nav {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center nav items */
+    }
+
+    /* Make nav links stack on smaller tablet screens */
+    nav a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+/* Desktop Layout (Large screens) */
+@media screen and (min-width: 1200px) {
+    /* Ensure logo stays in the top left */
+    #logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    /* Ensure nav stays inline with logo */
+    nav {
+        display: inline-block;
+        margin-left: 100px;
+        text-align: left;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
